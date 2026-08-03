@@ -200,6 +200,7 @@
     <div class="tabs" role="tablist" aria-label="Feasts">
       <button class="tab is-on" role="tab" aria-selected="true" data-ftab="transfiguration">Transfiguration</button>
       <button class="tab" role="tab" aria-selected="false" data-ftab="dormition">Dormition</button>
+      <button class="tab" role="tab" aria-selected="false" data-ftab="gallery">All feast icons</button>
     </div>
 
     <article id="fpane-transfiguration" class="fpane">
@@ -258,6 +259,11 @@
         <h3>Our first Dormition</h3>
         <div id="dormition-fields"></div>
       </div>
+    </article>
+
+    <article id="fpane-gallery" class="fpane" hidden>
+      <h3>Icons for the Great Feasts</h3>
+      <div id="icon-gallery"></div>
     </article>
   </section>
 
