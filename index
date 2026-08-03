@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dormition Fast Companion</title>
+<meta name="description" content="A family companion for the Orthodox fasting year and the Dormition Fast, built from the GOARCH Planner.">
+<meta name="theme-color" content="#3b0b17">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Dormition">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/favicon.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="app-header">
+  <div class="header-inner">
+    <svg class="cross" viewBox="0 0 24 40" aria-hidden="true" focusable="false">
+      <g fill="currentColor">
+        <rect x="10.7" y="2" width="2.6" height="34"/>
+        <rect x="5" y="7" width="14" height="2.2"/>
+        <rect x="2.5" y="14" width="19" height="2.6"/>
+        <rect x="5" y="25.4" width="14" height="2.2" transform="rotate(-20 12 26.5)"/>
+      </g>
+    </svg>
+    <div class="header-text">
+      <h1>Dormition Fast Companion</h1>
+      <p class="header-sub" id="header-sub">August 1–15, 2026</p>
+    </div>
+    <button class="text-size-btn" id="text-size-btn" aria-label="Change text size">Aa</button>
+  </div>
+</header>
+
+<div class="banner" id="update-banner" hidden role="status">
+  <span>An updated version of the Dormition Fast Companion is available.</span>
+  <button id="update-now">Update now</button>
+</div>
+
+<div class="banner banner-offline" id="offline-banner" hidden role="status">
+  You are offline. Source links need a connection, but the fasting data saved in this app is still here.
+</div>
+
+<main id="main" tabindex="-1">
+
+  <!-- ================= TODAY ================= -->
+  <section class="view" id="view-today" aria-labelledby="today-h">
+    <h2 class="visually-hidden" id="today-h">Today</h2>
+    <div id="today-content"></div>
+  </section>
+
+  <!-- ================= CALENDAR ================= -->
+  <section class="view" id="view-calendar" hidden aria-labelledby="cal-h">
+    <h2 id="cal-h" class="view-title">Calendar</h2>
+    <p class="view-note">Built from the official <a href="https://www.goarch.org/chapel/planner" target="_blank" rel="noopener noreferrer">GOARCH Planner</a> for the 2025&ndash;2026 ecclesiastical year &mdash; every day, not just the fast.</p>
+
+    <div class="tabs" role="tablist" aria-label="Calendar views">
+      <button class="tab is-on" role="tab" aria-selected="true" data-ctab="fast">Dormition Fast</button>
+      <button class="tab" role="tab" aria-selected="false" data-ctab="year">Whole year</button>
+      <button class="tab" role="tab" aria-selected="false" data-ctab="wheel">Year wheel</button>
+      <button class="tab" role="tab" aria-selected="false" data-ctab="index">Feasts &amp; fasts</button>
+      <button class="tab" role="tab" aria-selected="false" data-ctab="search">Find a saint</button>
+    </div>
+
+    <div id="cpane-fast" class="cpane">
+    <div class="filters" role="group" aria-label="Filter days by fasting level">
+      <button class="chip is-on" data-filter="all">All days</button>
+      <button class="chip" data-filter="strict">Strict Fast</button>
+      <button class="chip" data-filter="wine-oil">Wine &amp; Oil</button>
+      <button class="chip" data-filter="fish-oil-wine">Fish Allowed</button>
+      <button class="chip" data-filter="fast-free">Feast / Fast Free</button>
+      <button class="chip" data-filter="milestone">Our milestones</button>
+    </div>
+
+    <div class="cal-grid" id="cal-grid" role="list"></div>
+    </div>
+
+    <div id="cpane-year" class="cpane" hidden>
+      <div class="month-nav">
+        <button id="month-prev" class="month-btn" aria-label="Previous month">&#8592;</button>
+        <h3 id="month-label" aria-live="polite">&nbsp;</h3>
+        <button id="month-next" class="month-btn" aria-label="Next month">&#8594;</button>
+      </div>
+      <div class="month-grid" id="month-grid"></div>
+      <p class="small">Tap any day for its designation, saints and readings. Days outside the loaded year are greyed.</p>
+      <h3 class="seasons-h">Fasting seasons this year</h3>
+      <div id="season-list"></div>
+    </div>
+
+    <div id="cpane-wheel" class="cpane" hidden>
+      <p class="view-note">The whole ecclesiastical year as one wheel &mdash; September at the top, moving clockwise. Every ray is a day, coloured by its fasting designation; the inner arcs are the four fasting seasons; the gold marks are the Great Feasts; the blue mark is your own day. Tap any ray to open that day. The month grid holds the same information for keyboard and screen-reader use.</p>
+      <div id="wheel-host" class="wheel-host"></div>
+      <div class="btn-row wheel-actions">
+        <button class="btn btn-print" id="wheel-print">Print the wheel as a poster</button>
+      </div>
+      <p class="small">Drawn entirely from the GOARCH Planner data &mdash; nothing on the wheel is hand-placed.</p>
+    </div>
+
+    <div id="cpane-index" class="cpane" hidden>
+      <div class="filters" role="group" aria-label="Choose what to list">
+        <button class="chip is-on" data-index="great">Great Feasts</button>
+        <button class="chip" data-index="paschal">Paschal cycle</button>
+        <button class="chip" data-index="seasons">Fasting seasons</button>
+        <button class="chip" data-index="freeweeks">Fast-free weeks</button>
+        <button class="chip" data-index="fish">Fish days</button>
+        <button class="chip" data-index="strict">Strict days</button>
+        <button class="chip" data-index="dairy">Dairy days</button>
+        <button class="chip" data-index="lentsundays">Sundays of Lent</button>
+        <button class="chip" data-index="marian">Theotokos</button>
+        <button class="chip" data-index="fore">Forefeasts</button>
+        <button class="chip" data-index="wedfri">Wed &amp; Fri</button>
+        <button class="chip" data-index="sundays">Named Sundays</button>
+      </div>
+      <p class="idx-count small" id="index-counts"></p>
+      <div id="index-list"></div>
+    </div>
+
+    <div id="cpane-search" class="cpane" hidden>
+      <label class="field-label" for="search-box">Search saints and feasts across all 365 days</label>
+      <input type="search" id="search-box" placeholder="Nicholas, Paraskevi, Basil, martyr&hellip;" autocomplete="off">
+      <p class="small">Useful for finding a name day, or checking when a saint is commemorated.</p>
+      <div id="search-results"></div>
+    </div>
+
+    <div class="legend">
+      <h3>Legend</h3>
+      <ul id="legend-list"></ul>
+    </div>
+  </section>
+
+  <!-- ================= MEALS ================= -->
+  <section class="view" id="view-meals" hidden aria-labelledby="meals-h">
+    <h2 id="meals-h" class="view-title">Meals</h2>
+
+    <div class="tabs" role="tablist" aria-label="Meals sections">
+      <button class="tab is-on" role="tab" aria-selected="true" data-mtab="ideas">Ideas</button>
+      <button class="tab" role="tab" aria-selected="false" data-mtab="planner">Planner</button>
+      <button class="tab" role="tab" aria-selected="false" data-mtab="recipes">Recipes</button>
+      <button class="tab" role="tab" aria-selected="false" data-mtab="celebration">Aug 6 menus</button>
+    </div>
+
+    <div id="mpane-ideas" class="mpane">
+      <div class="filters" role="group" aria-label="Filter meal ideas by fasting level">
+        <button class="chip is-on" data-level="strict">Strict Fast</button>
+        <button class="chip" data-level="wine-oil">Wine &amp; Oil</button>
+        <button class="chip" data-level="fish-oil-wine">Fish Allowed</button>
+        <button class="chip" data-level="fast-free">Fast Free</button>
+      </div>
+      <div class="filters filters-sm" role="group" aria-label="Filter meal ideas by tag">
+        <button class="chip chip-sm is-on" data-tag="">Everything</button>
+        <button class="chip chip-sm" data-tag="__fav">Favourites</button>
+        <button class="chip chip-sm" data-tag="quick">30 min or less</button>
+        <button class="chip chip-sm" data-tag="family">Family friendly</button>
+        <button class="chip chip-sm" data-tag="protein">Higher protein</button>
+        <button class="chip chip-sm" data-tag="batch">Batch cooking</button>
+        <button class="chip chip-sm" data-tag="slow">Slow cooker</button>
+        <button class="chip chip-sm" data-tag="pot">Instant Pot</button>
+      </div>
+      <details class="pantry-details"><summary>What&rsquo;s in my kitchen?</summary><div id="pantry-chips"></div></details>
+      <div id="strict-methods" class="callout" hidden></div>
+      <div id="meal-list"></div>
+    </div>
+
+    <div id="mpane-planner" class="mpane" hidden>
+      <div class="filters" role="group" aria-label="Which days to plan">
+        <button class="chip is-on" data-span="fast">The Dormition Fast</button>
+        <button class="chip" data-span="week">The next 7 days</button>
+      </div>
+      <div class="filters" role="group" aria-label="Choose a meal plan">
+        <button class="chip is-on" data-plan="A">Plan A · Simple family</button>
+        <button class="chip" data-plan="B">Plan B · Mediterranean table</button>
+        <button class="chip" data-plan="own">Choose my own</button>
+      </div>
+      <p class="view-note">Meals can only be placed on a day with a matching designation. Anything you have starred is preferred when a plan is generated. This app does not make grocery lists.</p>
+      <div id="planner-list"></div>
+    </div>
+
+    <div id="mpane-recipes" class="mpane" hidden>
+      <div id="recipe-list"></div>
+    </div>
+
+    <div id="mpane-celebration" class="mpane" hidden>
+      <div id="celebration-list"></div>
+    </div>
+  </section>
+
+  <!-- ================= JOURNEY ================= -->
+  <section class="view" id="view-journey" hidden aria-labelledby="journey-h">
+    <h2 id="journey-h" class="view-title">The Journey</h2>
+    <p class="view-note">Fourteen days of fasting, one feast in the middle, one feast at the end.</p>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <!-- ================= FEASTS ================= -->
+  <section class="view" id="view-feasts" hidden aria-labelledby="feasts-h">
+    <h2 id="feasts-h" class="view-title">The Feasts</h2>
+    <div class="tabs" role="tablist" aria-label="Feasts">
+      <button class="tab is-on" role="tab" aria-selected="true" data-ftab="transfiguration">Transfiguration</button>
+      <button class="tab" role="tab" aria-selected="false" data-ftab="dormition">Dormition</button>
+    </div>
+
+    <article id="fpane-transfiguration" class="fpane">
+      <div class="icon-frame" data-icon-slot="transfiguration"></div>
+      <h3>The Holy Transfiguration of Our Lord, God and Savior Jesus Christ</h3>
+      <p class="feast-date">Thursday, August 6, 2026 · Fish, Oil and Wine Allowed</p>
+      <p><a href="https://www.goarch.org/transfiguration" target="_blank" rel="noopener noreferrer">GOARCH feast page</a> · <a href="https://www.goarch.org/chapel/calendar" target="_blank" rel="noopener noreferrer">GOARCH calendar</a></p>
+
+      <h4>The readings</h4>
+      <ul>
+        <li>Matins Gospel — Luke 9:28-36</li>
+        <li>Epistle — II Peter 1:10-19</li>
+        <li>Gospel — Matthew 17:1-9</li>
+      </ul>
+      <p class="small">GOARCH notes that the event is recorded in Matthew 17:1-9, Mark 9:2-8 and Luke 9:28-36.</p>
+
+      <h4>The feast</h4>
+      <p>Christ took Peter, James and John up a mountain, and there His appearance changed before them: His face shone and His clothing became brilliant. Moses and Elijah appeared and spoke with Him. Peter, overwhelmed, offered to build three shelters. A cloud overshadowed them and the voice of the Father was heard from it, declaring Christ to be His beloved Son.</p>
+      <p>The Orthodox reading of the feast is that nothing was added to Christ on the mountain. What changed was the apostles — for a moment they were given to see the glory that was always His. The uncreated light of Tabor is the same light the Church prays to receive, and the reason the feast sits where it does in the fast is that the Church wants us climbing before we arrive.</p>
+
+      <h4>Fasting on August 6</h4>
+      <p>The GOARCH calendar designates August 6, 2026 as <strong>Fish, oil and wine are allowed. Refrain from meat, dairy and eggs.</strong> The fast is relaxed in honour of the feast, then resumes on August 7.</p>
+
+      <h4>Customs, where practiced</h4>
+      <p>In many parishes grapes and first fruits are brought to church and blessed after the Divine Liturgy on this day. Practice varies by parish and jurisdiction; ask your priest what your community does.</p>
+
+      <div class="milestone-panel">
+        <h3>A Day of Transfiguration, Baptism and Chrismation</h3>
+        <p class="small">Saved on this device only. Nothing here is sent anywhere.</p>
+        <div id="transfig-fields"></div>
+      </div>
+    </article>
+
+    <article id="fpane-dormition" class="fpane" hidden>
+      <div class="icon-frame" data-icon-slot="dormition"></div>
+      <h3>The Dormition of the Most Holy Theotokos</h3>
+      <p class="feast-date">Saturday, August 15, 2026 · No fasting restrictions</p>
+      <p><a href="https://www.goarch.org/dormition" target="_blank" rel="noopener noreferrer">GOARCH feast page</a> · <a href="https://www.goarch.org/chapel/calendar" target="_blank" rel="noopener noreferrer">GOARCH calendar</a></p>
+
+      <h4>The word</h4>
+      <p>Dormition translates the Greek <em>Koimesis</em> — a falling asleep. The Greek word for cemetery comes from the same root. The name is the theology: for those in Christ, death has become sleep.</p>
+
+      <h4>The readings</h4>
+      <ul>
+        <li>Matins Gospel — Luke 1:39-49, 56</li>
+        <li>Epistle — Philippians 2:5-11</li>
+        <li>Gospel — Luke 10:38-42; 11:27-28</li>
+      </ul>
+
+      <h4>The feast</h4>
+      <p>The Church keeps the death of the Theotokos as a feast. She died as every human being dies, and her Son received her. The Church holds that she was then taken up bodily — this belongs to the Church's Tradition and to her hymnography rather than to a narrative in Scripture, and Orthodox teaching says so plainly rather than reading it into a biblical text.</p>
+      <p>The distinction matters and is worth stating carefully: the Orthodox Church does not teach the feast in the terms the Roman Catholic Church defined in 1950, and it does not treat the account as a scriptural narrative. What it celebrates is that the first and closest disciple of Christ has already arrived where the whole Church is going.</p>
+      <p>That is why fourteen days of fasting end here rather than in mourning. The fast prepares the household for a funeral that turns out to be a feast.</p>
+
+      <div class="milestone-panel">
+        <h3>Our first Dormition</h3>
+        <div id="dormition-fields"></div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= MEMORIES ================= -->
+  <section class="view" id="view-memories" hidden aria-labelledby="mem-h">
+    <h2 id="mem-h" class="view-title">My First Dormition Fast in the Orthodox Church</h2>
+    <p class="view-note">Everything on this screen stays on this device. Export it before you clear your browser data.</p>
+    <div id="memories-fields"></div>
+  </section>
+
+  <!-- ================= MORE ================= -->
+  <section class="view" id="view-more" hidden aria-labelledby="more-h">
+    <h2 id="more-h" class="view-title">More</h2>
+
+    <div class="tabs" role="tablist" aria-label="More sections">
+      <button class="tab is-on" role="tab" aria-selected="true" data-otab="prayer">Prayer</button>
+      <button class="tab" role="tab" aria-selected="false" data-otab="parish">Parish</button>
+      <button class="tab" role="tab" aria-selected="false" data-otab="practice">Daily practice</button>
+      <button class="tab" role="tab" aria-selected="false" data-otab="data">Your data</button>
+      <button class="tab" role="tab" aria-selected="false" data-otab="about">About</button>
+    </div>
+
+    <div id="opane-prayer" class="opane">
+      <h3>The prayer corner</h3>
+      <p class="view-note">This companion links to prayers rather than reprinting them. Translations of the services are owned by their translators, and more importantly, the wording your parish uses is the wording worth learning. Your prayer rule itself belongs with your priest — what follows is furniture, not a rule.</p>
+
+      <div class="card">
+        <h3>A simple daily shape</h3>
+        <p>Many households begin with something like this, morning and evening, adjusted by their priest:</p>
+        <ol class="rule-list">
+          <li><strong>Stand before your icons.</strong> Light the lamp or a candle if you keep one.</li>
+          <li><strong>The Trisagion Prayers</strong> — the Church&rsquo;s ordinary opening, from &ldquo;Holy God&rdquo; through the Our Father.</li>
+          <li><strong>Psalm 50 (51)</strong> — the psalm of repentance, read daily in the Church&rsquo;s own services.</li>
+          <li><strong>Remember the day</strong> — today&rsquo;s saints and readings are on the Today screen.</li>
+          <li><strong>Your own words</strong> — the people you carry, by name. The Parish tab keeps your commemoration list.</li>
+          <li><strong>The Jesus Prayer</strong> — see below.</li>
+        </ol>
+        <p class="small">The full texts, with music and audio, are on the official
+          <a href="https://dcs.goarch.org/" target="_blank" rel="noopener noreferrer">GOARCH Digital Chant Stand</a> —
+          including <a href="https://dcs.goarch.org/goa/dcs/servicesindex.html" target="_blank" rel="noopener noreferrer">every day&rsquo;s services by date</a>.</p>
+      </div>
+
+      <div class="card">
+        <h3>The Jesus Prayer</h3>
+        <p class="jesus-prayer">Lord Jesus Christ, Son of God, have mercy on me, a sinner.</p>
+        <p class="small">One sentence, drawn from the Gospels, prayed continually by Orthodox Christians for many centuries. It needs no book and no screen. If you use a prayer rope, the counter below can stand in when the rope is not in your pocket &mdash; it keeps no history and no score.</p>
+        <div class="rope">
+          <div class="rope-target" role="group" aria-label="Prayer rope counter">
+            <button class="chip chip-sm rope-goal is-on" data-goal="33">33</button>
+            <button class="chip chip-sm rope-goal" data-goal="50">50</button>
+            <button class="chip chip-sm rope-goal" data-goal="100">100</button>
+          </div>
+          <button id="rope-btn" class="rope-btn" aria-describedby="rope-note">
+            <span id="rope-count" aria-live="polite">0</span>
+            <span class="rope-sub">tap with each prayer</span>
+          </button>
+          <div class="btn-row rope-row">
+            <button class="btn btn-print" id="rope-reset">Begin again</button>
+          </div>
+          <p class="small" id="rope-note">Nothing here is saved or tracked. When you close the app, the count is gone &mdash; as it should be.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>The Paraklesis</h3>
+        <p>The supplicatory canon to the Theotokos, served in parishes throughout the Dormition Fast &mdash; the evenings of this fast are largely built around it. Parish schedules vary; the Journey tab has a place to write yours.</p>
+        <p><a href="https://dcs.goarch.org/goa/dcs/p/b/ho/ho23/gr-en/bk.ho.ho23.pdf" target="_blank" rel="noopener noreferrer">The Small Paraklesis &mdash; complete official text, Greek and English (Digital Chant Stand)</a></p>
+        <p class="small">Reading it once at home before your first service helps enormously &mdash; the refrains repeat, and children catch them fast.</p>
+      </div>
+
+      <div class="card">
+        <h3>Psalms for the season</h3>
+        <p>Citations only &mdash; read them from your own Bible or psalter. Orthodox books number the Psalms by the Greek Septuagint; most English Bibles use the Hebrew numbering, usually one higher. Both are given.</p>
+        <ul>
+          <li><strong>Psalm 50 (51)</strong> &mdash; repentance; the daily psalm of the Church&rsquo;s morning prayer</li>
+          <li><strong>Psalm 26 (27)</strong> &mdash; courage before something new: fitting before a Chrismation</li>
+          <li><strong>Psalm 33 (34)</strong> &mdash; thanksgiving; sung at the end of the Liturgy in many parishes</li>
+          <li><strong>Psalm 102 (103)</strong> &mdash; blessing the Lord for everything; good for a feast evening</li>
+          <li><strong>Psalm 120 (121)</strong> &mdash; for travel and for the night before August 6</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Listening</h3>
+        <p>For chant while cooking the fast&rsquo;s suppers or driving to Paraklesis:</p>
+        <ul>
+          <li><a href="https://dcs.goarch.org/" target="_blank" rel="noopener noreferrer">Digital Chant Stand</a> &mdash; the official scores and recordings for the actual services</li>
+          <li><a href="https://www.ancientfaith.com/" target="_blank" rel="noopener noreferrer">Ancient Faith</a> &mdash; streaming Orthodox music and podcasts (a supplemental source, not Archdiocesan)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="opane-parish" class="opane" hidden>
+      <h3>Parish life</h3>
+      <div id="parish-fields"></div>
+    </div>
+
+    <div id="opane-practice" class="opane" hidden>
+      <h3>Daily practice</h3>
+      <p class="view-note">These are gentle reminders, not a measure of spiritual worth. There are no streaks here and nothing is scored.</p>
+      <label class="field-label" for="practice-date">Day</label>
+      <select id="practice-date" class="select"></select>
+      <div id="practice-list"></div>
+    </div>
+
+    <div id="opane-data" class="opane" hidden>
+      <h3>Your data</h3>
+      <p>Journal entries, meal choices, parish notes, memories and settings are stored in this browser on this device. They are never sent anywhere — this app has no server, no account, no analytics and no tracking.</p>
+      <p><strong>Browser storage is not a backup.</strong> Clearing site data, deleting the app, or resetting the device will remove everything that has not been exported. Export after any day that matters.</p>
+      <div class="btn-row">
+        <button class="btn" id="export-btn">Export everything as JSON</button>
+        <button class="btn" id="import-btn">Import a JSON file</button>
+        <input type="file" id="import-file" accept="application/json" hidden>
+        <button class="btn btn-print" id="print-btn">Print this app</button>
+        <button class="btn btn-danger" id="clear-btn">Clear all local data</button>
+      </div>
+      <p class="small" id="storage-note"></p>
+    </div>
+
+    <div id="opane-about" class="opane" hidden>
+      <h3>About this companion</h3>
+      <div class="callout callout-pastoral">
+        <p>This companion reflects the fasting designations published by the Greek Orthodox Archdiocese of America. Individual fasting practices may be adjusted with the guidance of one's parish priest or spiritual father, particularly for children, pregnancy, illness, medication, demanding work, travel, eating disorders, or other pastoral and medical needs.</p>
+        <p>Fasting is not merely a dietary program; it belongs within prayer, repentance, worship, almsgiving, and life in Christ.</p>
+      </div>
+      <h4>Sources</h4>
+      <ul class="sources">
+        <li><a href="https://www.goarch.org/chapel/planner" target="_blank" rel="noopener noreferrer">GOARCH Planner: Ecclesiastical Digital Calendar</a> — the controlling source. Every fasting designation, saint and reading citation in this app is parsed directly from the official Planner ICS for 2025&ndash;2026.</li>
+        <li><a href="https://www.goarch.org/chapel/calendar" target="_blank" rel="noopener noreferrer">GOARCH Online Chapel calendar</a> — the same data on the web, and where the full reading text can be read.</li>
+        <li><a href="https://www.goarch.org/transfiguration" target="_blank" rel="noopener noreferrer">GOARCH — Transfiguration of our Lord</a></li>
+        <li><a href="https://www.goarch.org/dormition" target="_blank" rel="noopener noreferrer">GOARCH — Dormition of the Theotokos</a></li>
+        <li><a href="https://www.goarch.org/-/the-calendar-of-the-orthodox-church" target="_blank" rel="noopener noreferrer">GOARCH — The Calendar of the Orthodox Church</a>, which gives the Dormition fast as August 1 to 14.</li>
+      </ul>
+      <h4>What this app does not contain</h4>
+      <p>No patristic quotations, sayings of saints, hymn texts or liturgical texts are reproduced here. The reflection prompts are ordinary questions written for this app, not quotations from anyone. Where something belongs to Tradition rather than to Scripture, the text says so.</p>
+      <h4>Images</h4>
+      <p>Every graphic shipped with this app is an original SVG drawn in code — the three-bar cross, the borders, the ornaments, the app icon. No feast icon is bundled. Instead the Feasts screen lets you add your own properly licensed image, which is stored on this device along with the credit and licence you record. The README names two public-domain files that fit.</p>
+      <p class="small" id="verify-note"></p>
+    </div>
+  </section>
+</main>
+
+<nav class="bottom-nav" aria-label="Main">
+  <button class="nav-btn is-on" data-view="today"><span class="nav-ico" aria-hidden="true">☩</span><span>Today</span></button>
+  <button class="nav-btn" data-view="calendar"><span class="nav-ico" aria-hidden="true">▦</span><span>Calendar</span></button>
+  <button class="nav-btn" data-view="meals"><span class="nav-ico" aria-hidden="true">◍</span><span>Meals</span></button>
+  <button class="nav-btn" data-view="journey"><span class="nav-ico" aria-hidden="true">⟡</span><span>Journey</span></button>
+  <button class="nav-btn" data-view="feasts"><span class="nav-ico" aria-hidden="true">✷</span><span>Feasts</span></button>
+  <button class="nav-btn" data-view="memories"><span class="nav-ico" aria-hidden="true">❧</span><span>Memories</span></button>
+  <button class="nav-btn" data-view="more"><span class="nav-ico" aria-hidden="true">⋯</span><span>More</span></button>
+</nav>
+
+<input type="file" id="icon-file" accept="image/*" hidden>
+
+<dialog id="day-dialog" aria-labelledby="dlg-title">
+  <div class="dlg-head">
+    <h2 id="dlg-title"></h2>
+    <button id="dlg-close" aria-label="Close">✕</button>
+  </div>
+  <div id="dlg-body"></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
