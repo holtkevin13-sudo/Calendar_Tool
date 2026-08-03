@@ -403,15 +403,21 @@
     var l = lg(day.fastingLevel);
 
     var fc = el('div', 'card');
+    var slotKey = registerDaySlot(day);
+    var frame = el('div', 'icon-frame icon-frame-sm');
+    frame.setAttribute('data-icon-slot', slotKey);
     if (day.isGreatFeast) {
-      var eb = feastEmblem(day.greatFeast, 64);
-      if (eb) {
-        var ew = el('div', 'emblem-banner');
-        ew.appendChild(eb);
-        ew.appendChild(el('span', 'emblem-label', 'Ornament from this companion — not an icon'));
-        fc.appendChild(ew);
-      }
+      // a Great Feast wears its icon openly
+      fc.appendChild(frame);
+    } else {
+      // every other day gets the same slot, folded away so it does not shout
+      var det = el('details', 'icon-details');
+      det.appendChild(el('summary', null, 'Icon for this day'));
+      det.appendChild(frame);
+      fc.appendChild(det);
     }
+    // the card is not in the document yet, so populate this frame directly
+    mountIconInto(frame, slotKey);
     if (compact) {
       fc.appendChild(el('h3', null, longDate(day.date)));
       fc.appendChild(badge(day.fastingLevel, false));
@@ -1343,24 +1349,117 @@
   }
 
   /* ================= FEASTS ================= */
+  /* One icon slot per Great Feast. Slot keys are stable strings used as the
+     IndexedDB key, so an icon added on the feast day and one added from the
+     Feasts screen are the same record. Alt text describes the composition
+     without pretending to interpret the feast. */
   var ICONS = {
-    transfiguration: {
+    'nativity-theotokos': {
+      feastName: 'Nativity of the Theotokos',
+      alt: 'Icon of the Nativity of the Theotokos: St. Anna reclining after the birth, attendants bringing her food and water, and the infant Mary being washed below.',
+      feast: 'https://www.goarch.org/'
+    },
+    'holy-cross': {
+      feastName: 'Elevation of the Holy Cross',
+      alt: 'Icon of the Elevation of the Holy Cross: the bishop raising the Cross above the people, flanked by clergy, with the church of the Resurrection behind.',
+      feast: 'https://www.goarch.org/'
+    },
+    'entrance-theotokos': {
+      feastName: 'Entrance of the Theotokos',
+      alt: 'Icon of the Entrance of the Theotokos: the child Mary ascending the temple steps toward the high priest, her parents and maidens with candles behind her.',
+      feast: 'https://www.goarch.org/'
+    },
+    'nativity-christ': {
+      feastName: 'Nativity of Christ',
+      alt: 'Icon of the Nativity of Christ: the Theotokos beside the cave and the manger, the star above, angels and shepherds, the magi approaching, and Joseph seated apart.',
+      feast: 'https://www.goarch.org/'
+    },
+    'theophany': {
+      feastName: 'Theophany',
+      alt: 'Icon of the Theophany: Christ standing in the Jordan, John the Forerunner with his hand upon Him, angels attending, and the Spirit descending from above.',
+      feast: 'https://www.goarch.org/'
+    },
+    'presentation': {
+      feastName: 'Presentation of Our Lord',
+      alt: 'Icon of the Presentation: the elder Simeon receiving the Christ child in the temple, with the Theotokos, Joseph and the prophetess Anna.',
+      feast: 'https://www.goarch.org/'
+    },
+    'annunciation': {
+      feastName: 'Annunciation',
+      alt: 'Icon of the Annunciation: the Archangel Gabriel approaching the Theotokos, who is seated with her spinning, and a ray descending from above.',
+      feast: 'https://www.goarch.org/'
+    },
+    'palm-sunday': {
+      feastName: 'Palm Sunday',
+      alt: 'Icon of the Entry into Jerusalem: Christ riding toward the city, the disciples behind Him, and children with palm branches before the gate.',
+      feast: 'https://www.goarch.org/'
+    },
+    'pascha': {
+      feastName: 'Pascha',
+      alt: 'Icon of the Resurrection: Christ standing upon the broken gates of Hades, raising Adam and Eve from their tombs by the hand.',
+      feast: 'https://www.goarch.org/'
+    },
+    'ascension': {
+      feastName: 'Ascension',
+      alt: 'Icon of the Ascension: Christ in a mandorla borne by angels above, the Theotokos and the apostles gathered below.',
+      feast: 'https://www.goarch.org/'
+    },
+    'pentecost': {
+      feastName: 'Pentecost',
+      alt: 'Icon of Pentecost: the apostles seated in a semicircle with tongues of fire above them.',
+      feast: 'https://www.goarch.org/'
+    },
+    'transfiguration': {
+      feastName: 'Transfiguration',
       alt: 'Icon of the Transfiguration: Christ within a mandorla of light on the mountain, Moses and Elijah to either side, and the three apostles below.',
       feast: 'https://www.goarch.org/transfiguration'
     },
-    dormition: {
+    'dormition': {
+      feastName: 'Dormition of the Theotokos',
       alt: 'Icon of the Dormition: the Theotokos on her bier surrounded by the apostles, with Christ behind her holding her soul.',
       feast: 'https://www.goarch.org/dormition'
     }
   };
 
+  var FEAST_SLOT = {};
+  Object.keys(ICONS).forEach(function (k) { FEAST_SLOT[ICONS[k].feastName] = k; });
+
+  /* Slots for ordinary days are keyed by month and day, not by full date, so an
+     icon added for St. Nicholas on 6 December survives rebuilding the calendar
+     for a later year. Their labels are registered as the slots are created. */
+  var DYN = {};
+  function daySlot(day) {
+    if (day.isGreatFeast && FEAST_SLOT[day.greatFeast]) return FEAST_SLOT[day.greatFeast];
+    return 'md:' + day.date.slice(5);
+  }
+  function registerDaySlot(day) {
+    var slot = daySlot(day);
+    if (!ICONS[slot] && !DYN[slot]) {
+      // prefer the actual commemoration over any devotional heading
+      var who = (day.saints && day.saints.length) ? day.saints[0] : (day.plannerTitle || day.title);
+      DYN[slot] = {
+        feastName: who,
+        alt: 'Icon for ' + who + ', commemorated on ' + shortDate(day.date) + '.',
+        feast: DATA.year.chapelUrl
+      };
+    }
+    return slot;
+  }
+  function iconCfg(slot) { return ICONS[slot] || DYN[slot] || {}; }
+
   function mountIcon(slot) {
-    var frame = document.querySelector('[data-icon-slot="' + slot + '"]');
-    if (!frame) return;
-    var cfg = ICONS[slot];
+    var frames = document.querySelectorAll('[data-icon-slot="' + slot + '"]');
+    if (!frames.length) return;
+    Array.prototype.forEach.call(frames, function (frame) { mountIconInto(frame, slot); });
+  }
+
+  function mountIconInto(frame, slot) {
+    var cfg = iconCfg(slot);
     IDB.get(slot).then(function (rec) {
       clear(frame);
       if (rec && rec.dataUrl) {
+        var det = frame.parentNode;
+        if (det && det.tagName === 'DETAILS') det.open = true;
         var fig = el('figure', 'icon-fig');
         var img = el('img');
         img.src = rec.dataUrl;
@@ -1381,6 +1480,8 @@
           if (window.confirm('Remove this icon from the app?')) IDB.del(slot).then(function () { mountIcon(slot); });
         }));
         frame.appendChild(row);
+        var cap2 = el('p', 'emblem-label', 'Added by you \u00b7 stored on this device only');
+        frame.appendChild(cap2);
       } else {
         frame.appendChild(placeholderArt(slot));
         frame.appendChild(btn('btn', 'Add an icon', function () { iconPrompt(slot); }));
@@ -1392,22 +1493,22 @@
   }
 
   function placeholderArt(slot) {
+    var cfg = iconCfg(slot);
     var box = el('div', 'icon-placeholder');
-    var svg = svgEl('svg', { viewBox: '0 0 120 120', 'aria-hidden': 'true', 'class': 'mandorla' });
-    var shapes = slot === 'transfiguration'
-      ? [['circle', { cx: 60, cy: 52, r: 34 }], ['circle', { cx: 60, cy: 52, r: 26 }], ['circle', { cx: 60, cy: 52, r: 18 }]]
-      : [['rect', { x: 24, y: 54, width: 72, height: 12 }], ['circle', { cx: 60, cy: 40, r: 20 }], ['circle', { cx: 60, cy: 40, r: 12 }]];
-    shapes.forEach(function (s) {
-      var a = s[1];
-      a.fill = 'none'; a.stroke = 'currentColor'; a['stroke-width'] = '1.2';
-      svg.appendChild(svgEl(s[0], a));
-    });
-    box.appendChild(svg);
+    var em = feastEmblem(cfg.feastName, 96);
+    if (em) {
+      em.setAttribute('class', 'emblem mandorla');
+      box.appendChild(em);
+    }
     box.appendChild(el('p', null, 'No icon added yet.'));
     var p2 = el('p', 'small');
-    p2.appendChild(document.createTextNode('Add a properly licensed image from this device, or view the feast on the '));
-    p2.appendChild(link(ICONS[slot].feast, 'GOARCH feast page'));
-    p2.appendChild(document.createTextNode('. The README names two public-domain files that fit.'));
+    p2.appendChild(document.createTextNode('Add a properly licensed image of ' +
+      (cfg.feastName || 'this day') + ' from this device. '));
+    if (cfg.feast) {
+      p2.appendChild(link(cfg.feast, 'GOARCH'));
+      p2.appendChild(document.createTextNode(' \u00b7 '));
+    }
+    p2.appendChild(document.createTextNode('The README names verified public-domain files.'));
     box.appendChild(p2);
     return box;
   }
@@ -1427,7 +1528,8 @@
       r.onload = function () {
         var probe = new Image();
         probe.onload = function () {
-          var title = window.prompt('What is this icon? e.g. The Transfiguration, c. 1403, Tretyakov Gallery', '') || '';
+          var fname = iconCfg(slot).feastName || 'this day';
+          var title = window.prompt('What is this icon of ' + fname + '? e.g. Icon, c. 1403, Tretyakov Gallery', '') || '';
           var credit = window.prompt('Creator or holding institution?', '') || '';
           var licence = window.prompt('Licence, so the attribution travels with the image. e.g. Public domain (PD-Art)', '') || '';
           IDB.put(slot, {
@@ -1443,9 +1545,30 @@
     input.click();
   }
 
+  function renderGallery() {
+    var host = document.getElementById('icon-gallery');
+    if (!host || host.children.length) return;
+    host.appendChild(el('p', 'view-note', 'An icon slot for each of the Twelve Great Feasts and Pascha. Add a properly licensed image and the credit you record travels with it. Icons appear on the feast day itself and stay on this device.'));
+    (DATA.year.greatFeasts || []).forEach(function (g) {
+      var slot = FEAST_SLOT[g.name];
+      if (!slot) return;
+      var card = el('div', 'gal-item');
+      var head = el('div', 'gal-head');
+      head.appendChild(el('strong', null, g.name));
+      head.appendChild(el('span', 'small', longDate(g.date)));
+      card.appendChild(head);
+      var frame = el('div', 'icon-frame icon-frame-sm');
+      frame.setAttribute('data-icon-slot', slot);
+      card.appendChild(frame);
+      host.appendChild(card);
+      mountIconInto(frame, slot);
+    });
+  }
+
   function renderFeastFields() {
     mountIcon('transfiguration');
     mountIcon('dormition');
+    renderGallery();
     var t = document.getElementById('transfig-fields');
     if (!t.children.length) {
       fieldGroup(t, 'transfig', [
