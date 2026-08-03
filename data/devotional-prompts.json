@@ -1,0 +1,65 @@
+{
+ "note": "Every prompt in this file was written for this companion. Nothing here is a quotation from a saint, a father, a hymn, or a liturgical text, and nothing should be presented as one. Prompts are questions and small intentions in the app's own voice, selected deterministically by date so a given day always shows the same prompt. The August 1-15 overlay always takes precedence over these pools.",
+ "label": "A prompt from this companion — not a liturgical text.",
+ "selection": {
+   "order": ["overlay", "rank", "cycle", "season", "weekday", "ordinary"],
+   "explanation": "For each day: if the Dormition overlay has content, use it. Otherwise try a rank pool (pascha, great-feast, forefeast, apodosis, sunday), then a cycle pool (triodion, great-lent, holy-week, bright-week, pentecostarion), then a fasting-season pool (nativity-fast, apostles-fast), then the Wednesday/Friday pool on those weekdays when the day is a fast day, then the ordinary pool."
+ },
+ "pools": {
+  "pascha": [
+   {"focus": "The feast of feasts. Everything the year has been for arrives today.", "journal": "Where were you at the moment the light came into the church — and what do you want to remember about it?", "mercy": "Invite someone to the table today who was not expecting to be invited."}
+  ],
+  "great-feast": [
+   {"focus": "A Great Feast of the Church. The ordinary week bends around it; let the household bend a little too.", "journal": "What is this feast asking our family to see that a normal day hides?", "mercy": "Mark the day for someone else — a call, a meal, a candle lit for them."},
+   {"focus": "The Church keeps feasts with the body: standing, singing, eating, gathering. Keep this one with more than your thoughts.", "journal": "If we could hold one image from today's services, what would it be?", "mercy": "Share the feast's food with a neighbour or someone at the parish."}
+  ],
+  "forefeast": [
+   {"focus": "A forefeast — the Church leaning toward what is coming. Preparation is itself part of the celebration.", "journal": "What would it look like for our house to be ready for this feast, practically and quietly?", "mercy": "Do one act of preparation for someone else's feast, not your own."},
+   {"focus": "The eve of a feast is for getting the house of the heart in order, not for hurry.", "journal": "What needs setting down before tomorrow?", "mercy": "Make peace with anyone in the household before the feast begins."}
+  ],
+  "apodosis": [
+   {"focus": "The leavetaking of a feast. The Church says goodbye slowly, so that the feast can settle in rather than vanish.", "journal": "What did this feast leave with us, now that it is being set aside?", "mercy": "Thank someone who made the feast possible — clergy, chanters, kitchen, drivers."}
+  ],
+  "sunday": [
+   {"focus": "Sunday is a small Pascha. Whatever the season, the Resurrection sets today's table.", "journal": "What did I notice in the Liturgy this morning that I had not noticed before?", "mercy": "Greet someone at church you have not yet spoken to."},
+   {"focus": "The week begins from the altar, not from Monday's list.", "journal": "What is one thing from today's Gospel to carry into the week?", "mercy": "Offer a ride, a meal, or an hour to someone in the parish."},
+   {"focus": "Rest is commanded, not merely permitted. Let some part of today be genuinely still.", "journal": "Where does our family actually rest — and is it restoring us?", "mercy": "Give someone in the house an hour off from their usual work."}
+  ],
+  "triodion": [
+   {"focus": "The Triodion has opened. The Church begins turning toward Great Lent weeks before it arrives, gently, one Sunday at a time.", "journal": "What is this year's Lent going to need from me that last year's did not?", "mercy": "Begin now: one small generosity that could become a Lenten habit."},
+   {"focus": "These pre-Lenten weeks ask for honesty before they ask for effort.", "journal": "Where am I still excusing something I already know needs to change?", "mercy": "Apologize for something small that you have been letting slide."}
+  ],
+  "great-lent": [
+   {"focus": "The Great Fast. Long enough that it cannot be performed — only lived, badly and then better.", "journal": "Where is Christ inviting me to greater patience today?", "mercy": "Give quietly, so that no one at home knows the amount."},
+   {"focus": "Lent simplifies the table so that other things can grow: prayer, repentance, mercy. The food is the smallest part.", "journal": "What unnecessary comfort can I release today, without judging anyone who does not?", "mercy": "Listen to someone all the way through without preparing your reply."},
+   {"focus": "The middle of a fast is where it stops being interesting. That is precisely where it starts to form us.", "journal": "What have I learned about my own appetites since the fast began?", "mercy": "Cook enough of something to give a portion away."},
+   {"focus": "Prostrations, hunger, standing in long services — Lent is prayed with the body. Do what your body can, and let that be enough.", "journal": "Where did I fail to love this week, and how can I begin again?", "mercy": "Visit, call, or write to someone who is housebound or alone."}
+  ],
+  "holy-week": [
+   {"focus": "Holy Week. Clear the calendar of everything that can possibly move; nothing else this year is like these days.", "journal": "Which service of this week do I most want our family to be present for, and what will it cost to be there?", "mercy": "Take over someone's obligations so that they can be in church."},
+   {"focus": "The Church walks to the Cross one day at a time. Do not skip ahead to Sunday.", "journal": "What is hardest to look at in these days' services — and why?", "mercy": "Forgive, concretely, one person you have been carrying a grievance against."}
+  ],
+  "bright-week": [
+   {"focus": "Bright Week — one day of Pascha stretched across seven. There is no fasting and no kneeling; there is only the feast.", "journal": "What does it change to live a whole week as if it were Sunday?", "mercy": "Bring paschal food or greetings to someone who could not be at the services."}
+  ],
+  "pentecostarion": [
+   {"focus": "The fifty days. The Church counts from Pascha the way a family counts from a birth.", "journal": "What has this Pascha changed, now that some weeks have passed?", "mercy": "Encourage someone whose Lent was hard."}
+  ],
+  "nativity-fast": [
+   {"focus": "The Nativity Fast — forty days walking toward the cave in Bethlehem while the world around us is already unwrapping.", "journal": "How do we keep this season pointed at Christ in a household with lists, lights and deadlines?", "mercy": "Set aside something each week of this fast for someone who will have a lean Christmas."},
+   {"focus": "This fast is gentler than Lent but longer than it feels. Steadiness matters more than strictness.", "journal": "What small daily practice could our family actually keep for forty days?", "mercy": "Write to someone you have not thanked this year."}
+  ],
+  "apostles-fast": [
+   {"focus": "The Apostles' Fast — kept for the two who were made ready to give everything. Its length changes every year; its point does not.", "journal": "What was I given that I have not yet handed on?", "mercy": "Tell someone plainly what the faith has given you."}
+  ],
+  "wedfri": [
+   {"focus": "Wednesday and Friday are the week's two small fasts — one for the betrayal, one for the Cross. A quiet weekly rhythm older than any calendar on the wall.", "journal": "What does this small regular fast do in a week that a long fast cannot?", "mercy": "Skip one purchase today and pass the amount on."},
+   {"focus": "A fast day inside an ordinary week. Nothing dramatic — just the table remembering.", "journal": "Whom can I remember in prayer today?", "mercy": "Do one household task that is not yours to do, and say nothing about it."}
+  ],
+  "ordinary": [
+   {"focus": "An ordinary day in the Church's year — which still has its saints, its readings, and its own quiet work.", "journal": "What did I receive with gratitude today?", "mercy": "Send a message to someone you have been meaning to check on."},
+   {"focus": "Most of the Christian life is unremarkable days done faithfully.", "journal": "What is one small thing done well today?", "mercy": "Notice who is tired in this house, and lighten something for them."},
+   {"focus": "The saints of today's calendar were mostly unknown in their own lifetimes. Obscurity is no obstacle.", "journal": "Read today's saints' names slowly. Which one would you like to know more about?", "mercy": "Pray for someone by name who will never know you did."}
+  ]
+ }
+}
