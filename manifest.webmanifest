@@ -1,0 +1,25 @@
+{
+  "name": "Dormition Fast Companion",
+  "short_name": "Dormition",
+  "description": "A family companion for the Dormition Fast, August 1-15, with fasting designations from the GOARCH Online Chapel calendar.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#3b0b17",
+  "theme_color": "#3b0b17",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["lifestyle", "food", "books"],
+  "icons": [
+    { "src": "assets/icons/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/maskable-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Today", "url": "./index.html#today" },
+    { "name": "Calendar", "url": "./index.html#calendar" },
+    { "name": "Meals", "url": "./index.html#meals" }
+  ]
+}
