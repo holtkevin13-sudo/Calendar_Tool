@@ -1,0 +1,3149 @@
+{
+ "note": "Meal ideas grouped by GOARCH fasting designation. Cuisine labels describe inspiration, not authenticity. Nothing here is a pastoral ruling — how your household treats nuts, seeds, tahini, olives, avocado, shellfish or alcohol is a question for your priest.",
+ "tagLabels": {
+  "family": "Family friendly",
+  "protein": "Higher protein",
+  "batch": "Batch cooking",
+  "slow": "Slow cooker",
+  "pot": "Instant Pot / pressure cooker",
+  "quick": "30 minutes or less",
+  "oilfree": "Explicitly oil-free method"
+ },
+ "levels": {
+  "strict": [
+   {
+    "id": "br000",
+    "name": "Oatmeal with fruit, cinnamon and honey",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br001",
+    "name": "Overnight oats with apple and raisins, no added oil",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch",
+     "oilfree"
+    ],
+    "note": "Use water or a plain oat drink with no added oil.",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br002",
+    "name": "Toast with fruit preserves",
+    "meal": "breakfast",
+    "cuisine": "Simple",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit",
+     "bread"
+    ]
+   },
+   {
+    "id": "br003",
+    "name": "Banana-oat bowl with peanut butter",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "quick",
+     "protein"
+    ],
+    "note": "Peanut butter is a whole-food fat, not added oil. Practice varies — ask your priest.",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br004",
+    "name": "Rice porridge with dates",
+    "meal": "breakfast",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br005",
+    "name": "Date and walnut oatmeal",
+    "meal": "breakfast",
+    "cuisine": "Middle Eastern-inspired",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br006",
+    "name": "Baked apples with oats and cinnamon",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br007",
+    "name": "Fruit and seed bowl",
+    "meal": "breakfast",
+    "cuisine": "Simple",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "br008",
+    "name": "Oat and banana smoothie",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br009",
+    "name": "Savory oatmeal with mushrooms and thyme",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "quick"
+    ],
+    "note": "Water-sauté the mushrooms.",
+    "pantry": [
+     "oats",
+     "mushrooms"
+    ]
+   },
+   {
+    "id": "br010",
+    "name": "Oil-free breakfast potatoes on parchment",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "Bake on parchment at 425°F, no oil.",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "br011",
+    "name": "Bread with tomato and salt",
+    "meal": "breakfast",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "bread"
+    ]
+   },
+   {
+    "id": "br012",
+    "name": "Congee with scallion and ginger",
+    "meal": "breakfast",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "batch",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "rice"
+    ]
+   },
+   {
+    "id": "br013",
+    "name": "Grits with roasted tomatoes",
+    "meal": "breakfast",
+    "cuisine": "American comfort",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "lu014",
+    "name": "Lentil soup with lemon",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "batch",
+     "protein",
+     "pot",
+     "slow"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils"
+    ]
+   },
+   {
+    "id": "lu015",
+    "name": "Chickpea and cucumber salad with lemon",
+    "meal": "lunch",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "lu016",
+    "name": "White bean and tomato soup",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "batch",
+     "protein",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "lu017",
+    "name": "Split pea soup",
+    "meal": "lunch",
+    "cuisine": "Slavic",
+    "tags": [
+     "batch",
+     "slow",
+     "protein"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "lu018",
+    "name": "Mujadara without added oil",
+    "meal": "lunch",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "batch",
+     "protein"
+    ],
+    "note": "Dry-toast the onions in a heavy pan until deeply browned.",
+    "pantry": [
+     "lentils"
+    ]
+   },
+   {
+    "id": "lu019",
+    "name": "Baked potato bowl with beans and salsa",
+    "meal": "lunch",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "potatoes"
+    ]
+   },
+   {
+    "id": "lu020",
+    "name": "Rice and black bean bowl with lime",
+    "meal": "lunch",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "family",
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "rice"
+    ]
+   },
+   {
+    "id": "lu021",
+    "name": "Bulgur salad with parsley, tomato and lemon",
+    "meal": "lunch",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "quick",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "bulgur"
+    ]
+   },
+   {
+    "id": "lu022",
+    "name": "Tomato and lentil stew",
+    "meal": "lunch",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "batch",
+     "pot",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "lu023",
+    "name": "Oil-free minestrone",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "batch",
+     "pot",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta"
+    ]
+   },
+   {
+    "id": "lu024",
+    "name": "Rice bowl inspired by stuffed grape leaves",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "batch"
+    ],
+    "note": "Inspired by dolmades; not a traditional preparation.",
+    "pantry": [
+     "rice",
+     "fruit"
+    ]
+   },
+   {
+    "id": "lu025",
+    "name": "Pasta e ceci without oil",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas",
+     "pasta"
+    ]
+   },
+   {
+    "id": "lu026",
+    "name": "Black bean soup with cumin and lime",
+    "meal": "lunch",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "batch",
+     "pot",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans"
+    ]
+   },
+   {
+    "id": "lu027",
+    "name": "Chickpea lettuce wraps",
+    "meal": "lunch",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "lu028",
+    "name": "Mushroom barley soup",
+    "meal": "lunch",
+    "cuisine": "Slavic",
+    "tags": [
+     "batch",
+     "slow",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "mushrooms",
+     "barley"
+    ]
+   },
+   {
+    "id": "lu029",
+    "name": "Miso-free vegetable and noodle broth",
+    "meal": "lunch",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta"
+    ]
+   },
+   {
+    "id": "lu030",
+    "name": "Tomato rice soup",
+    "meal": "lunch",
+    "cuisine": "American comfort",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "di031",
+    "name": "Red lentil dal",
+    "meal": "dinner",
+    "cuisine": "Indian",
+    "tags": [
+     "batch",
+     "protein",
+     "pot",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils"
+    ]
+   },
+   {
+    "id": "di032",
+    "name": "Oil-free lentil curry with spinach",
+    "meal": "dinner",
+    "cuisine": "Indian",
+    "tags": [
+     "protein",
+     "batch",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils",
+     "spinach"
+    ]
+   },
+   {
+    "id": "di033",
+    "name": "Chickpea and tomato stew",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "protein",
+     "batch",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "di034",
+    "name": "Three-bean chili",
+    "meal": "dinner",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "protein",
+     "batch",
+     "slow",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "beans"
+    ]
+   },
+   {
+    "id": "di035",
+    "name": "Peppers stuffed with rice, lentils and herbs",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils",
+     "rice",
+     "peppers"
+    ]
+   },
+   {
+    "id": "di036",
+    "name": "Mushroom and barley casserole",
+    "meal": "dinner",
+    "cuisine": "Slavic",
+    "tags": [
+     "batch",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "mushrooms",
+     "barley"
+    ]
+   },
+   {
+    "id": "di037",
+    "name": "Pasta with tomato and summer vegetables",
+    "meal": "dinner",
+    "cuisine": "Italian",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "di038",
+    "name": "Cabbage rolls with rice and lentils",
+    "meal": "dinner",
+    "cuisine": "Slavic",
+    "tags": [
+     "batch",
+     "slow",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils",
+     "rice",
+     "cabbage"
+    ]
+   },
+   {
+    "id": "di039",
+    "name": "Vegetable tagine with chickpeas and apricot",
+    "meal": "dinner",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "batch",
+     "slow",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "di040",
+    "name": "Potato and pea curry",
+    "meal": "dinner",
+    "cuisine": "Indian",
+    "tags": [
+     "family",
+     "quick",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "di041",
+    "name": "White bean shepherd's pie with potato topping",
+    "meal": "dinner",
+    "cuisine": "American comfort",
+    "tags": [
+     "family",
+     "batch",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "potatoes"
+    ]
+   },
+   {
+    "id": "di042",
+    "name": "Baked sweet potatoes with lentils and greens",
+    "meal": "dinner",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils",
+     "potatoes"
+    ]
+   },
+   {
+    "id": "di043",
+    "name": "Vegetable and noodle soup",
+    "meal": "dinner",
+    "cuisine": "American comfort",
+    "tags": [
+     "family",
+     "quick",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta"
+    ]
+   },
+   {
+    "id": "di044",
+    "name": "Polenta with mushroom ragù",
+    "meal": "dinner",
+    "cuisine": "Italian",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "mushrooms"
+    ]
+   },
+   {
+    "id": "di045",
+    "name": "Oil-free vegetable biryani",
+    "meal": "dinner",
+    "cuisine": "Indian",
+    "tags": [
+     "batch",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "rice"
+    ]
+   },
+   {
+    "id": "di046",
+    "name": "Lentil sloppy joes",
+    "meal": "dinner",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "protein",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils"
+    ]
+   },
+   {
+    "id": "di047",
+    "name": "Chickpea pot pie with a biscuit-style crust",
+    "meal": "dinner",
+    "cuisine": "American comfort",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "di048",
+    "name": "Summer vegetable stew with zucchini and tomato",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "zucchini"
+    ]
+   },
+   {
+    "id": "di049",
+    "name": "Rice and pigeon-pea style one-pot",
+    "meal": "dinner",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "batch",
+     "pot",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "rice"
+    ]
+   },
+   {
+    "id": "di050",
+    "name": "Butternut and red lentil soup",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "batch",
+     "slow",
+     "pot",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils"
+    ]
+   },
+   {
+    "id": "di051",
+    "name": "Steamed vegetable and tofu bowl with ginger-soy",
+    "meal": "dinner",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "tofu"
+    ]
+   },
+   {
+    "id": "di052",
+    "name": "Baked ziti-style pasta with tomato and white beans",
+    "meal": "dinner",
+    "cuisine": "Italian",
+    "tags": [
+     "family",
+     "batch",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "pasta",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "di053",
+    "name": "Black-eyed peas with greens and tomato",
+    "meal": "dinner",
+    "cuisine": "American comfort",
+    "tags": [
+     "batch",
+     "protein",
+     "slow"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "di054",
+    "name": "Potato and green bean stew",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "potatoes"
+    ]
+   },
+   {
+    "id": "sn055",
+    "name": "Hummus without added oil, with pita",
+    "meal": "snack",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "protein",
+     "batch"
+    ],
+    "note": "Genuinely oil-free: blend chickpeas with tahini, lemon, garlic and cooking liquid. Tahini is a whole-food fat; practice varies.",
+    "pantry": [
+     "chickpeas",
+     "bread"
+    ]
+   },
+   {
+    "id": "sn056",
+    "name": "Apple slices with cinnamon",
+    "meal": "snack",
+    "cuisine": "Simple",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "sn057",
+    "name": "Roasted chickpeas, dry-roasted",
+    "meal": "snack",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "protein",
+     "batch",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "sn058",
+    "name": "Air-popped popcorn with salt",
+    "meal": "snack",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "sn059",
+    "name": "Dates stuffed with walnuts",
+    "meal": "snack",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "sn060",
+    "name": "Cucumber and tomato with salt and vinegar",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "sn061",
+    "name": "Rice cakes with fruit spread",
+    "meal": "snack",
+    "cuisine": "Simple",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "fruit"
+    ]
+   },
+   {
+    "id": "sn062",
+    "name": "Frozen grapes",
+    "meal": "snack",
+    "cuisine": "Simple",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "sn063",
+    "name": "Edamame, steamed and salted",
+    "meal": "snack",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "protein",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "beans"
+    ]
+   },
+   {
+    "id": "sn064",
+    "name": "Watermelon with mint",
+    "meal": "snack",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "sn065",
+    "name": "Pretzels with mustard",
+    "meal": "snack",
+    "cuisine": "American",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "sn066",
+    "name": "Baked tortilla chips with salsa",
+    "meal": "snack",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de067",
+    "name": "Fruit crisp with an oat topping, no added oil",
+    "meal": "dessert",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "de068",
+    "name": "Baked pears with cloves",
+    "meal": "dessert",
+    "cuisine": "Simple",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de069",
+    "name": "Rice pudding made with oat drink",
+    "meal": "dessert",
+    "cuisine": "Slavic",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "oats"
+    ]
+   },
+   {
+    "id": "de070",
+    "name": "Banana 'ice cream' — frozen bananas blended",
+    "meal": "dessert",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de071",
+    "name": "Semolina halva, prepared without butter or oil",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "batch"
+    ],
+    "note": "Traditional halvas normally uses oil; this is an adapted oil-free version.",
+    "pantry": []
+   },
+   {
+    "id": "de072",
+    "name": "Poached peaches in spiced syrup",
+    "meal": "dessert",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de073",
+    "name": "Dark chocolate sorbet",
+    "meal": "dessert",
+    "cuisine": "Simple",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de074",
+    "name": "Applesauce cake without oil",
+    "meal": "dessert",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de075",
+    "name": "Fresh figs with honey",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de076",
+    "name": "Watermelon granita",
+    "meal": "dessert",
+    "cuisine": "Italian",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   }
+  ],
+  "wine-oil": [
+   {
+    "id": "br000",
+    "name": "Bread with olive oil and oregano",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "br001",
+    "name": "Olive oil granola with fruit",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "batch",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "br002",
+    "name": "Tahini and date toast",
+    "meal": "breakfast",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit",
+     "bread"
+    ]
+   },
+   {
+    "id": "br003",
+    "name": "Skillet potatoes with rosemary",
+    "meal": "breakfast",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "br004",
+    "name": "Chickpea flour pancakes",
+    "meal": "breakfast",
+    "cuisine": "Indian",
+    "tags": [
+     "protein",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "br005",
+    "name": "Avocado toast with lemon and chili",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "br006",
+    "name": "Fried bread with tomato and olive oil",
+    "meal": "breakfast",
+    "cuisine": "Spanish-inspired",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "bread"
+    ]
+   },
+   {
+    "id": "br007",
+    "name": "Oatmeal with olive oil, honey and walnuts",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "oats"
+    ]
+   },
+   {
+    "id": "br008",
+    "name": "Ful medames with pita",
+    "meal": "breakfast",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "protein",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "br009",
+    "name": "Scallion pancakes",
+    "meal": "breakfast",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "br010",
+    "name": "Fried plantain with rice",
+    "meal": "breakfast",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "rice"
+    ]
+   },
+   {
+    "id": "br011",
+    "name": "Focaccia with rosemary and olive oil",
+    "meal": "breakfast",
+    "cuisine": "Italian",
+    "tags": [
+     "batch",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "lu012",
+    "name": "Fasolakia — green beans braised in olive oil and tomato",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "lu013",
+    "name": "Hummus with warm pita and olives",
+    "meal": "lunch",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "protein",
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas",
+     "bread"
+    ]
+   },
+   {
+    "id": "lu014",
+    "name": "Falafel with tahini sauce",
+    "meal": "lunch",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "lu015",
+    "name": "Mediterranean grain bowl with chickpeas and herbs",
+    "meal": "lunch",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "protein",
+     "quick",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "lu016",
+    "name": "Lentil salad with mustard vinaigrette",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "protein",
+     "batch",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils"
+    ]
+   },
+   {
+    "id": "lu017",
+    "name": "Gigantes-style baked butter beans in tomato",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "protein",
+     "batch",
+     "slow"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "lu018",
+    "name": "Pasta aglio e olio, no cheese",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta"
+    ]
+   },
+   {
+    "id": "lu019",
+    "name": "Chickpea shawarma bowl",
+    "meal": "lunch",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "protein",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "lu020",
+    "name": "Roasted potatoes with lemon and oregano",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "lu021",
+    "name": "Fattoush with toasted pita",
+    "meal": "lunch",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "lu022",
+    "name": "Panzanella with tomato and basil",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "lu023",
+    "name": "Vegetable pizza without cheese",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "lu024",
+    "name": "Olive and tomato flatbread",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "bread"
+    ]
+   },
+   {
+    "id": "lu025",
+    "name": "Peanut noodle salad",
+    "meal": "lunch",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "protein",
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta"
+    ]
+   },
+   {
+    "id": "lu026",
+    "name": "Bean and vegetable burrito",
+    "meal": "lunch",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "family",
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans"
+    ]
+   },
+   {
+    "id": "lu027",
+    "name": "Sesame slaw with crispy chickpeas",
+    "meal": "lunch",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "protein",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas",
+     "oats",
+     "cabbage"
+    ]
+   },
+   {
+    "id": "di028",
+    "name": "Briam — roasted summer vegetables in olive oil",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "di029",
+    "name": "Stuffed zucchini with rice and herbs",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "zucchini"
+    ]
+   },
+   {
+    "id": "di030",
+    "name": "Eggplant and tomato bake",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "eggplant"
+    ]
+   },
+   {
+    "id": "di031",
+    "name": "Vegetable curry with coconut milk",
+    "meal": "dinner",
+    "cuisine": "Indian",
+    "tags": [
+     "family",
+     "quick",
+     "pot",
+     "protein"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "di032",
+    "name": "Bean casserole with breadcrumb topping",
+    "meal": "dinner",
+    "cuisine": "American comfort",
+    "tags": [
+     "family",
+     "batch",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "bread"
+    ]
+   },
+   {
+    "id": "di033",
+    "name": "Grilled vegetable platter with lemon",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "di034",
+    "name": "Mushroom risotto without cheese",
+    "meal": "dinner",
+    "cuisine": "Italian",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "mushrooms"
+    ]
+   },
+   {
+    "id": "di035",
+    "name": "Chana masala",
+    "meal": "dinner",
+    "cuisine": "Indian",
+    "tags": [
+     "protein",
+     "batch",
+     "pot",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "chickpeas"
+    ]
+   },
+   {
+    "id": "di036",
+    "name": "Spanakorizo — spinach and rice",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "spinach"
+    ]
+   },
+   {
+    "id": "di037",
+    "name": "Ratatouille with crusty bread",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "batch",
+     "slow",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "di038",
+    "name": "Vegetable paella",
+    "meal": "dinner",
+    "cuisine": "Spanish-inspired",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "rice"
+    ]
+   },
+   {
+    "id": "di039",
+    "name": "Kimchi fried rice, vegan",
+    "meal": "dinner",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "cabbage"
+    ]
+   },
+   {
+    "id": "di040",
+    "name": "Black bean enchiladas without cheese",
+    "meal": "dinner",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "family",
+     "batch",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans"
+    ]
+   },
+   {
+    "id": "di041",
+    "name": "Imam bayildi — braised stuffed eggplant",
+    "meal": "dinner",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "eggplant"
+    ]
+   },
+   {
+    "id": "di042",
+    "name": "Pasta puttanesca without anchovy",
+    "meal": "dinner",
+    "cuisine": "Italian",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta",
+     "tomatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "di043",
+    "name": "Sweet potato and peanut stew",
+    "meal": "dinner",
+    "cuisine": "American",
+    "tags": [
+     "batch",
+     "slow",
+     "pot",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "di044",
+    "name": "Lentil moussaka with potato",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "lentils",
+     "potatoes",
+     "eggplant"
+    ]
+   },
+   {
+    "id": "di045",
+    "name": "Tofu and vegetable stir-fry",
+    "meal": "dinner",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "protein",
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "tofu"
+    ]
+   },
+   {
+    "id": "di046",
+    "name": "Roasted cauliflower with tahini and pomegranate",
+    "meal": "dinner",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "family",
+     "quick"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "di047",
+    "name": "Bean and vegetable pot pie",
+    "meal": "dinner",
+    "cuisine": "American comfort",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "beans"
+    ]
+   },
+   {
+    "id": "sn048",
+    "name": "Olive oil and sea salt potato chips, baked",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "sn049",
+    "name": "Marinated olives with orange peel",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "sn050",
+    "name": "Pita with za'atar and olive oil",
+    "meal": "snack",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "sn051",
+    "name": "Baba ghanoush with vegetables",
+    "meal": "snack",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "batch",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "eggplant"
+    ]
+   },
+   {
+    "id": "sn052",
+    "name": "Bruschetta with tomato and basil",
+    "meal": "snack",
+    "cuisine": "Italian",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "bread"
+    ]
+   },
+   {
+    "id": "sn053",
+    "name": "Toasted nuts with rosemary",
+    "meal": "snack",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "protein",
+     "quick",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "sn054",
+    "name": "Guacamole with tortilla chips",
+    "meal": "snack",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "sn055",
+    "name": "Fried halloumi-style tofu bites",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "protein",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "tofu"
+    ]
+   },
+   {
+    "id": "sn056",
+    "name": "Sesame candy with honey",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "sn057",
+    "name": "Roasted red pepper dip with bread",
+    "meal": "snack",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "batch",
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "bread",
+     "peppers"
+    ]
+   },
+   {
+    "id": "de058",
+    "name": "Olive oil orange cake",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de059",
+    "name": "Loukoumades with honey and cinnamon",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de060",
+    "name": "Halvas with semolina, olive oil and syrup",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de061",
+    "name": "Vegan chocolate olive oil cake",
+    "meal": "dessert",
+    "cuisine": "Italian",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de062",
+    "name": "Fruit crisp with olive oil oat topping",
+    "meal": "dessert",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "de063",
+    "name": "Tahini and date bars",
+    "meal": "dessert",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "batch",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de064",
+    "name": "Coconut rice pudding with mango",
+    "meal": "dessert",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "fruit"
+    ]
+   },
+   {
+    "id": "de065",
+    "name": "Almond and orange biscuits",
+    "meal": "dessert",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "batch",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de066",
+    "name": "Grilled peaches with honey and thyme",
+    "meal": "dessert",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de067",
+    "name": "Apple and walnut cake with olive oil",
+    "meal": "dessert",
+    "cuisine": "Slavic",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   }
+  ],
+  "fish-oil-wine": [
+   {
+    "id": "br000",
+    "name": "Smoked salmon on toast with lemon",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish",
+     "bread"
+    ]
+   },
+   {
+    "id": "br001",
+    "name": "Sardines on toasted bread with tomato",
+    "meal": "breakfast",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "fish",
+     "bread"
+    ]
+   },
+   {
+    "id": "br002",
+    "name": "Fish congee with ginger",
+    "meal": "breakfast",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "pot",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "fish"
+    ]
+   },
+   {
+    "id": "lu003",
+    "name": "Tuna and white bean salad",
+    "meal": "lunch",
+    "cuisine": "Italian",
+    "tags": [
+     "quick",
+     "protein",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "beans",
+     "fish"
+    ]
+   },
+   {
+    "id": "lu004",
+    "name": "Fish tacos with cabbage slaw",
+    "meal": "lunch",
+    "cuisine": "Mexican-inspired",
+    "tags": [
+     "family",
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "cabbage",
+     "fish"
+    ]
+   },
+   {
+    "id": "lu005",
+    "name": "Tuna pasta salad without mayonnaise",
+    "meal": "lunch",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "batch",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta",
+     "fish"
+    ]
+   },
+   {
+    "id": "lu006",
+    "name": "Fish sandwich without cheese or dairy sauce",
+    "meal": "lunch",
+    "cuisine": "American comfort",
+    "tags": [
+     "family",
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish",
+     "bread"
+    ]
+   },
+   {
+    "id": "lu007",
+    "name": "Grilled sardines with lemon and parsley",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "lu008",
+    "name": "Salmon rice bowl with cucumber",
+    "meal": "lunch",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "fish"
+    ]
+   },
+   {
+    "id": "di009",
+    "name": "Greek baked fish with lemon, tomato and herbs",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "di010",
+    "name": "Grilled salmon with olive oil and oregano",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "di011",
+    "name": "Baked cod with potatoes and olives",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "family",
+     "protein",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "potatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "di012",
+    "name": "Sheet-pan fish with summer vegetables",
+    "meal": "dinner",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "di013",
+    "name": "Mediterranean fish stew with tomato and fennel",
+    "meal": "dinner",
+    "cuisine": "Italian",
+    "tags": [
+     "protein",
+     "pot",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "di014",
+    "name": "Fish with rice pilaf and dill",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "fish"
+    ]
+   },
+   {
+    "id": "di015",
+    "name": "Salmon pasta with lemon and herbs, no cream",
+    "meal": "dinner",
+    "cuisine": "Italian",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta",
+     "fish"
+    ]
+   },
+   {
+    "id": "di016",
+    "name": "Fish kebabs with peppers",
+    "meal": "dinner",
+    "cuisine": "Middle Eastern",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fish",
+     "peppers"
+    ]
+   },
+   {
+    "id": "di017",
+    "name": "Baked trout with lemon and garlic",
+    "meal": "dinner",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "di018",
+    "name": "Simple seafood rice",
+    "meal": "dinner",
+    "cuisine": "Spanish-inspired",
+    "tags": [
+     "protein",
+     "batch",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "rice",
+     "fish"
+    ]
+   },
+   {
+    "id": "di019",
+    "name": "Plaki — fish baked in tomato, onion and parsley",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "di020",
+    "name": "Miso-glazed fish with steamed greens",
+    "meal": "dinner",
+    "cuisine": "East Asian-inspired",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "di021",
+    "name": "Fish curry with coconut milk",
+    "meal": "dinner",
+    "cuisine": "Indian",
+    "tags": [
+     "protein",
+     "quick",
+     "pot"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "di022",
+    "name": "Baked fish bites for children",
+    "meal": "dinner",
+    "cuisine": "American comfort",
+    "tags": [
+     "family",
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "sn023",
+    "name": "Tuna-stuffed tomatoes",
+    "meal": "snack",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "sn024",
+    "name": "Taramosalata-style dip with bread",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick"
+    ],
+    "note": "Traditional taramosalata is made with fish roe; check the ingredients if you buy it.",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "sn025",
+    "name": "Smoked fish pâté with crackers",
+    "meal": "snack",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "fish"
+    ]
+   },
+   {
+    "id": "sn026",
+    "name": "Anchovy and olive crostini",
+    "meal": "snack",
+    "cuisine": "Italian",
+    "tags": [
+     "quick"
+    ],
+    "note": "",
+    "pantry": [
+     "fish",
+     "bread"
+    ]
+   },
+   {
+    "id": "de027",
+    "name": "Grape and berry platter",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "Grapes are blessed in many parishes after Liturgy on August 6, where this is practiced.",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de028",
+    "name": "Dairy-free chocolate cake",
+    "meal": "dessert",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de029",
+    "name": "Fruit crisp with olive oil topping",
+    "meal": "dessert",
+    "cuisine": "American",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "oats",
+     "fruit"
+    ]
+   },
+   {
+    "id": "de030",
+    "name": "Loukoumades with honey",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de031",
+    "name": "Watermelon and mint salad",
+    "meal": "dessert",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   }
+  ],
+  "fast-free": [
+   {
+    "id": "br000",
+    "name": "Eggs with feta and tomato",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "br001",
+    "name": "Yogurt with honey and walnuts",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "br002",
+    "name": "Tiropita or spanakopita",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "spinach",
+     "bread"
+    ]
+   },
+   {
+    "id": "lu003",
+    "name": "Greek salad with feta",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "lu004",
+    "name": "Souvlaki with pita and tzatziki",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "lu005",
+    "name": "Cheese and vegetable sandwich",
+    "meal": "lunch",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "di006",
+    "name": "Roast lamb with lemon potatoes",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein",
+     "batch"
+    ],
+    "note": "A common Dormition table in many Greek households, where this is practiced.",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "di007",
+    "name": "Pastitsio",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "di008",
+    "name": "Moussaka",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "eggplant"
+    ]
+   },
+   {
+    "id": "di009",
+    "name": "Roast chicken with oregano and lemon",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "family",
+     "protein",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "di010",
+    "name": "Baked fish with feta and tomato",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "di011",
+    "name": "Youvetsi — braised meat with orzo",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch",
+     "slow"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta"
+    ]
+   },
+   {
+    "id": "sn012",
+    "name": "Cheese and olives with bread",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "sn013",
+    "name": "Yogurt with fruit",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de014",
+    "name": "Galaktoboureko",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de015",
+    "name": "Baklava",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de016",
+    "name": "Rizogalo — rice pudding with cinnamon",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "rice"
+    ]
+   },
+   {
+    "id": "de017",
+    "name": "Watermelon and cheese",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   }
+  ],
+  "dairy": [
+   {
+    "id": "br000",
+    "name": "Eggs with feta and tomato",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes"
+    ]
+   },
+   {
+    "id": "br001",
+    "name": "Yogurt with honey and walnuts",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "br002",
+    "name": "Tiropita or spanakopita",
+    "meal": "breakfast",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "spinach",
+     "bread"
+    ]
+   },
+   {
+    "id": "lu003",
+    "name": "Greek salad with feta",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "lu004",
+    "name": "Souvlaki with pita and tzatziki",
+    "meal": "lunch",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "lu005",
+    "name": "Cheese and vegetable sandwich",
+    "meal": "lunch",
+    "cuisine": "American",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "di006",
+    "name": "Roast lamb with lemon potatoes",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein",
+     "batch"
+    ],
+    "note": "A common Dormition table in many Greek households, where this is practiced.",
+    "pantry": [
+     "potatoes"
+    ]
+   },
+   {
+    "id": "di007",
+    "name": "Pastitsio",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "di008",
+    "name": "Moussaka",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "eggplant"
+    ]
+   },
+   {
+    "id": "di009",
+    "name": "Roast chicken with oregano and lemon",
+    "meal": "dinner",
+    "cuisine": "Mediterranean",
+    "tags": [
+     "family",
+     "protein",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "di010",
+    "name": "Baked fish with feta and tomato",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "protein"
+    ],
+    "note": "",
+    "pantry": [
+     "tomatoes",
+     "fish"
+    ]
+   },
+   {
+    "id": "di011",
+    "name": "Youvetsi — braised meat with orzo",
+    "meal": "dinner",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch",
+     "slow"
+    ],
+    "note": "",
+    "pantry": [
+     "pasta"
+    ]
+   },
+   {
+    "id": "sn012",
+    "name": "Cheese and olives with bread",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "bread"
+    ]
+   },
+   {
+    "id": "sn013",
+    "name": "Yogurt with fruit",
+    "meal": "snack",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "protein",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   },
+   {
+    "id": "de014",
+    "name": "Galaktoboureko",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de015",
+    "name": "Baklava",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": []
+   },
+   {
+    "id": "de016",
+    "name": "Rizogalo — rice pudding with cinnamon",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "family",
+     "batch"
+    ],
+    "note": "",
+    "pantry": [
+     "rice"
+    ]
+   },
+   {
+    "id": "de017",
+    "name": "Watermelon and cheese",
+    "meal": "dessert",
+    "cuisine": "Greek",
+    "tags": [
+     "quick",
+     "family"
+    ],
+    "note": "",
+    "pantry": [
+     "fruit"
+    ]
+   }
+  ]
+ },
+ "strictMethods": [
+  "Water sautéing — heat the dry pan first, add vegetables, then a tablespoon of water only when they stick; repeat. The sticking is where the flavour comes from.",
+  "Vegetable-broth sautéing — the same, with more taste in the liquid.",
+  "Dry-searing mushrooms — no liquid at all until they release their own; do not crowd the pan.",
+  "Onions without oil — low and slow in a heavy pan, deglazing with a spoon of water each time they catch; 25 minutes gets real depth.",
+  "Steaming — for greens and tender vegetables you will dress afterwards with lemon.",
+  "Boiling and simmering — soups and stews carry the fast; make them thick.",
+  "Baking on parchment at 220°C / 425°F — potatoes, chickpeas and root vegetables crisp without a drop of oil.",
+  "Pressure cooking — dried beans without soaking, dal in six minutes.",
+  "Slow cooking — assemble in the morning, come home to supper.",
+  "Season late and season hard — vinegar, lemon, mustard, herbs and salt do the work fat usually does."
+ ],
+ "strictNote": "Added oil and naturally occurring fat are different things. Olive oil poured into a pan is added oil, and the GOARCH legend sets it aside on strict days. The fat inside a walnut, an olive on the branch, an avocado, or a spoonful of tahini is part of a whole food — households, jurisdictions and spiritual fathers differ on how to treat those, and this app does not rule on it. Ask your priest. The same goes for shellfish and for wine substitutes: practice varies, and the table below never overrides your parish.",
+ "celebrationMenus": [
+  {
+   "title": "Simple parish gathering",
+   "for": "August 6 — Chrismation and Baptism",
+   "items": [
+    "Baked fish with lemon and herbs",
+    "Rice or lemon potatoes",
+    "Seasonal salad",
+    "Good bread",
+    "Fruit platter",
+    "A simple fasting dessert"
+   ]
+  },
+  {
+   "title": "Mediterranean celebration",
+   "for": "August 6 — Chrismation and Baptism",
+   "items": [
+    "Lemon-herb baked fish",
+    "Rice pilaf with dill",
+    "Roasted summer vegetables",
+    "Hummus and warm pita",
+    "Olives and bread",
+    "Grapes, berries and honey"
+   ]
+  },
+  {
+   "title": "Child-friendly menu",
+   "for": "August 6 — Chrismation and Baptism",
+   "items": [
+    "Baked fish bites",
+    "Plain rice",
+    "Soft cooked carrots and green beans",
+    "Cut fruit",
+    "Dairy-free cake or fruit crisp"
+   ]
+  }
+ ],
+ "celebrationNote": "August 6 is designated Fish, Oil and Wine Allowed on the GOARCH calendar. Preparation for Baptism, Chrismation and first Communion — including whether and how long to fast beforehand — is your priest's to direct, not this app's.",
+ "pantry": [
+  "lentils",
+  "chickpeas",
+  "beans",
+  "rice",
+  "pasta",
+  "potatoes",
+  "oats",
+  "mushrooms",
+  "tomatoes",
+  "zucchini",
+  "eggplant",
+  "cabbage",
+  "spinach",
+  "barley",
+  "bulgur",
+  "fish",
+  "tofu",
+  "fruit",
+  "bread",
+  "peppers"
+ ],
+ "pantryNote": "Tap what is in your kitchen and the list narrows to meals built on it. Matching is by the main ingredient in the meal's name — a rough guide, not a recipe database."
+}
