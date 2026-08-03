@@ -1,6 +1,6 @@
 /* Dormition Fast Companion service worker.
    Bump CACHE_VERSION whenever you change any file below. */
-const CACHE_VERSION = 'dfc-v6';
+const CACHE_VERSION = 'dfc-v8';
 const CACHE_NAME = CACHE_VERSION + '-shell';
 
 const SHELL = [
