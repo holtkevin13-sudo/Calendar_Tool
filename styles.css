@@ -532,3 +532,17 @@ input[type=search]{
   body.print-wheel-only .wheel-title{fill:#000}
   body.print-wheel-only .wheel-sub,body.print-wheel-only .wheel-sub2{fill:#444}
 }
+
+/* feast icon gallery */
+.icon-frame-sm{padding:.4rem;margin-bottom:.6rem}
+.icon-frame-sm .icon-placeholder{padding:.9rem .7rem}
+.icon-frame-sm .mandorla{width:80px;height:74px}
+.gal-item{margin-bottom:1.2rem}
+.gal-head{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin-bottom:.35rem}
+.gal-head strong{font-family:var(--display);font-size:1.05rem;color:var(--burgundy-900)}
+
+.icon-details{border:1px solid var(--rule);border-radius:8px;background:var(--ivory);padding:.1rem .7rem;margin-bottom:.9rem}
+.icon-details summary{cursor:pointer;font-family:var(--display);font-size:.95rem;color:var(--burgundy-800);padding:.5rem 0}
+.icon-details summary::marker{color:var(--gold-500)}
+.icon-details .icon-frame{margin-bottom:.7rem}
+@media print{.icon-details{border:0;padding:0}.icon-details summary{display:none}}
