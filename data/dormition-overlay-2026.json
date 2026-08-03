@@ -1,0 +1,249 @@
+{
+ "year": 2026,
+ "label": "Dormition Fast 2026",
+ "rangeStart": "2026-08-01",
+ "rangeEnd": "2026-08-15",
+ "sourceName": "GOARCH Planner: Ecclesiastical Digital Calendar",
+ "sourceUrl": "https://www.goarch.org/chapel/planner",
+ "verifiedDate": "2026-08-02",
+ "verificationNote": "Every fasting designation, commemoration and reading citation in this app is read directly from the official GOARCH Planner ICS for the 2025-2026 ecclesiastical year, published by the Greek Orthodox Archdiocese of America. Nothing is inferred from general fasting rules. The reflections, prompts and meal ideas are this app's own and are not from GOARCH.",
+ "legend": {
+  "strict": {
+   "id": "strict",
+   "goarchLabel": "Strict Fast",
+   "goarchText": "Refrain from meat, fish, oil, wine, dairy, and eggs.",
+   "informal": "A simple day: plant foods prepared without added oil.",
+   "permittedFoods": [
+    "Vegetables",
+    "Fruit",
+    "Grains and bread",
+    "Beans and lentils",
+    "Nuts and seeds",
+    "Shellfish, where this is the household's practice"
+   ],
+   "restrictedFoods": [
+    "Meat",
+    "Fish",
+    "Olive oil and other added oils",
+    "Wine and alcohol",
+    "Dairy",
+    "Eggs"
+   ],
+   "color": "strict",
+   "plannerLabel": "Strict Fast"
+  },
+  "wine-oil": {
+   "id": "wine-oil",
+   "goarchLabel": "Wine and Oil Allowed",
+   "goarchText": "Wine and oil are allowed. Refrain from meat, fish, dairy, and eggs.",
+   "informal": "Olive oil returns to the table.",
+   "permittedFoods": [
+    "Olive oil and other oils",
+    "Wine",
+    "Vegetables",
+    "Fruit",
+    "Grains and bread",
+    "Beans and lentils",
+    "Nuts and seeds"
+   ],
+   "restrictedFoods": [
+    "Meat",
+    "Fish",
+    "Dairy",
+    "Eggs"
+   ],
+   "color": "wine-oil",
+   "plannerLabel": "Fast Day (Wine and Oil Allowed)"
+  },
+  "fish-oil-wine": {
+   "id": "fish-oil-wine",
+   "goarchLabel": "Fish, Oil and Wine Allowed",
+   "goarchText": "Fish, oil and wine are allowed. Refrain from meat, dairy and eggs.",
+   "informal": "A festal relaxation of the fast.",
+   "permittedFoods": [
+    "Fish",
+    "Olive oil and other oils",
+    "Wine",
+    "Vegetables",
+    "Fruit",
+    "Grains and bread",
+    "Beans and lentils"
+   ],
+   "restrictedFoods": [
+    "Meat",
+    "Dairy",
+    "Eggs"
+   ],
+   "color": "fish",
+   "plannerLabel": "Fast Day (Fish Allowed)"
+  },
+  "dairy": {
+   "id": "dairy",
+   "goarchLabel": "Dairy Allowed",
+   "goarchText": "Dairy, eggs, and fish are allowed. Refrain from meat.",
+   "informal": "Used in the Church's calendar at other seasons, such as Cheesefare week.",
+   "permittedFoods": [
+    "Dairy",
+    "Eggs",
+    "Fish",
+    "Oil and wine",
+    "All plant foods"
+   ],
+   "restrictedFoods": [
+    "Meat"
+   ],
+   "color": "dairy",
+   "plannerLabel": "Fast Day (Dairy, Eggs, and Fish Allowed)"
+  },
+  "fast-free": {
+   "id": "fast-free",
+   "goarchLabel": "Fast Free",
+   "goarchText": "No fasting restrictions.",
+   "informal": "The feast itself. All foods are allowed.",
+   "permittedFoods": [
+    "All foods"
+   ],
+   "restrictedFoods": [],
+   "color": "free",
+   "plannerLabel": "Fast Free"
+  },
+  "none": {
+   "id": "none",
+   "goarchLabel": "No fasting restrictions",
+   "goarchText": "No fasting designation is listed for this date.",
+   "informal": "An ordinary day outside a fast.",
+   "permittedFoods": [
+    "All foods"
+   ],
+   "restrictedFoods": [],
+   "color": "none"
+  }
+ },
+ "days": [
+  {
+   "date": "2026-08-01",
+   "title": "Beginning of the Dormition Fast",
+   "spiritualFocus": "The fast begins. Not with a resolution, but with a turning — a small daily yes to Christ that the whole household can make together.",
+   "prayerReminder": "Ask the Theotokos to walk these fourteen days with your family.",
+   "journalPrompt": "What am I hoping to receive from these two weeks? Write it plainly, without polishing it.",
+   "mercyPrompt": "Decide today what the money saved on food this fortnight will go toward."
+  },
+  {
+   "date": "2026-08-02",
+   "title": "Ninth Sunday of Matthew",
+   "spiritualFocus": "Sunday is never a day of mourning. Even inside the fast, the Resurrection sets the table.",
+   "prayerReminder": "Divine Liturgy today, if your parish serves it.",
+   "journalPrompt": "What did I notice in the Liturgy this morning that I had not noticed before?",
+   "mercyPrompt": "Greet someone at coffee hour you have not yet spoken to."
+  },
+  {
+   "date": "2026-08-03",
+   "title": "Dormition Fast",
+   "spiritualFocus": "The first strict day. Hunger is not the point; attention is. Notice what you reach for when you are uncomfortable.",
+   "prayerReminder": "Small Paraklesis is served in many parishes on the weekdays of this fast.",
+   "journalPrompt": "What unnecessary comfort can I set down today, without judging anyone who does not?",
+   "mercyPrompt": "Send a message to someone you have been meaning to check on."
+  },
+  {
+   "date": "2026-08-04",
+   "title": "Dormition Fast",
+   "spiritualFocus": "Two days from the Transfiguration. The Church is already climbing the mountain.",
+   "prayerReminder": "Pray for your sponsors and godparents by name.",
+   "journalPrompt": "Whom do I want to remember in prayer this week?",
+   "mercyPrompt": "Do one household task that is not yours to do, and say nothing about it."
+  },
+  {
+   "date": "2026-08-05",
+   "title": "Forefeast of the Transfiguration",
+   "isPersonalMilestone": true,
+   "personalMilestoneLabel": "Eve of the Chrismation and Baptism",
+   "spiritualFocus": "The eve. Great Vespers of the Transfiguration is served in many parishes tonight. Keep the evening quiet if you can.",
+   "prayerReminder": "Confession, if it has not already been made. Then rest.",
+   "journalPrompt": "What am I bringing to the font and the chrism tomorrow — and what am I leaving behind?",
+   "mercyPrompt": "Forgive, concretely, one person you have been carrying a grievance against."
+  },
+  {
+   "date": "2026-08-06",
+   "title": "The Holy Transfiguration of Our Lord, God and Savior Jesus Christ",
+   "isPersonalMilestone": true,
+   "personalMilestoneLabel": "Holy Chrismation and Holy Baptism",
+   "spiritualFocus": "The light on Tabor is the same light given in Baptism and sealed in Chrismation. Today the household is joined to it.",
+   "prayerReminder": "Divine Liturgy. Grapes and first fruits are blessed after Liturgy in many parishes.",
+   "journalPrompt": "Write down what you want to remember from today before the day ends — the sounds, the words, the faces.",
+   "mercyPrompt": "Thank, by name, everyone who helped bring your family to this day."
+  },
+  {
+   "date": "2026-08-07",
+   "title": "Afterfeast of the Transfiguration",
+   "spiritualFocus": "The apostles came down the mountain. So do we. Ordinary Friday, ordinary lentils, the same Christ.",
+   "prayerReminder": "The first day of your life as a newly illumined family. Keep the prayer rule small and keep it.",
+   "journalPrompt": "What is different this morning, and what is exactly the same?",
+   "mercyPrompt": "Give away something you were saving for no particular reason."
+  },
+  {
+   "date": "2026-08-08",
+   "title": "Afterfeast of the Transfiguration",
+   "spiritualFocus": "A Saturday inside the fast. Oil returns; so does a little rest.",
+   "prayerReminder": "Great Vespers this evening.",
+   "journalPrompt": "What did I receive with gratitude this week?",
+   "mercyPrompt": "Cook enough of something to give a portion away."
+  },
+  {
+   "date": "2026-08-09",
+   "title": "Tenth Sunday of Matthew",
+   "spiritualFocus": "Your first Sunday Liturgy as a communicant family. Come hungry.",
+   "prayerReminder": "Prepare for Communion the night before, simply.",
+   "journalPrompt": "How did approaching the Chalice feel today?",
+   "mercyPrompt": "Offer a ride, a meal, or an hour to someone in the parish."
+  },
+  {
+   "date": "2026-08-10",
+   "title": "Dormition Fast",
+   "spiritualFocus": "The middle of a fast is where it stops being interesting. That is precisely where it starts to form us.",
+   "prayerReminder": "Paraklesis, if your parish serves it tonight.",
+   "journalPrompt": "Where is Christ inviting me to greater patience today?",
+   "mercyPrompt": "Listen to someone all the way through without preparing your reply."
+  },
+  {
+   "date": "2026-08-11",
+   "title": "Dormition Fast",
+   "spiritualFocus": "Fasting without mercy is only a diet. Look for one concrete way to be generous today.",
+   "prayerReminder": "Pray for the newly illumined everywhere.",
+   "journalPrompt": "How can our family practice mercy today?",
+   "mercyPrompt": "Give quietly, so that no one at home knows the amount."
+  },
+  {
+   "date": "2026-08-12",
+   "title": "Dormition Fast",
+   "spiritualFocus": "Three days left. Ask the Theotokos to carry what you cannot.",
+   "prayerReminder": "Read the Akathist or a Paraklesis canon at home if you cannot get to church.",
+   "journalPrompt": "Where did I fail to love this week, and how can I begin again?",
+   "mercyPrompt": "Apologize for something small that you have been letting slide."
+  },
+  {
+   "date": "2026-08-13",
+   "title": "Apodosis of the Transfiguration",
+   "spiritualFocus": "The Transfiguration is set aside today — one week after your Chrismation. The light does not leave with the feast.",
+   "prayerReminder": "Look back at what you wrote on August 6.",
+   "journalPrompt": "One week in. What has the Church already taught our family?",
+   "mercyPrompt": "Write a note of thanks to your priest."
+  },
+  {
+   "date": "2026-08-14",
+   "title": "Forefeast of the Dormition",
+   "spiritualFocus": "The last day of the fast. Great Vespers of the Dormition tonight. Finish gently, not triumphantly.",
+   "prayerReminder": "Prepare for Communion tomorrow.",
+   "journalPrompt": "Give thanks for the fourteen days — including the ones that went badly.",
+   "mercyPrompt": "Make peace with anyone in the household before the feast begins."
+  },
+  {
+   "date": "2026-08-15",
+   "title": "The Dormition of the Most Holy Theotokos",
+   "spiritualFocus": "The fast ends in a funeral that the Church keeps as a feast. Death, in her, has become a falling asleep.",
+   "prayerReminder": "Divine Liturgy. Then eat well, together.",
+   "journalPrompt": "What did this fast do in our family? Write it down now, while it is fresh.",
+   "mercyPrompt": "Set an extra place, literally or figuratively, at the feast."
+  }
+ ],
+ "note": "Devotional overlay for the Dormition Fast. Fasting designations, saints and reading citations come from data/calendar-year.json, built from the official GOARCH Planner. This file only adds reflections, prompts and personal milestones."
+}
